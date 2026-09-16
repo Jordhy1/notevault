@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NoteVault
 
-## Getting Started
+Personal knowledge and notes app untuk menyimpan, mengorganisasi, mencari, dan menggunakan kembali berbagai informasi pribadi.
 
-First, run the development server:
+NoteVault memperlakukan **Note** sebagai entity utama. Prompt, idea, code, bookmark, todo, study notes, dan work notes adalah variasi dari Note, bukan produk terpisah.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Documentation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Architecture](.devin/ARCHITECTURE.md) — struktur teknis, folder, data flow, database, security, dan conventions.
+- [Blueprint](.devin/BLUEPRINT.md) — product vision, fitur, UX, user flow, MVP, dan roadmap.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Core Philosophy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> Capture quickly. Organize optionally. Find instantly. Reuse easily.
 
-## Learn More
+## Initial Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- PostgreSQL
+- Prisma
+- Auth.js
+- TipTap
+- Zod
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Development Direction
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Bangun MVP terlebih dahulu:
 
-## Deploy on Vercel
+1. Authentication
+2. Notes CRUD
+3. Editor + autosave
+4. Collections
+5. Tags
+6. Search
+7. Pin / Favorite / Recent
+8. Note types: Prompt, Idea, Code, Bookmark, Todo
+9. Responsive UI
+10. Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Fitur AI, semantic search, browser extension, mobile app, dan collaboration ditunda sampai core experience stabil.
